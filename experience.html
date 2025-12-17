@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience | Zamratul Khaira</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #0f766e, #5eead4, #ccfbf1);
+    background-size: 300% 300%;
+    animation: gradientMove 12s ease infinite;
+    color: #333;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 50px;
+    background-color: rgba(15,118,110,0.9);
+}
+
+.logo {
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* EXPERIENCE */
+.experience {
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 50px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 26px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+}
+
+.exp-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.exp-header h2 {
+    font-size: 36px;
+    color: #0f766e;
+}
+
+.exp-group {
+    margin-bottom: 60px;
+}
+
+.exp-group h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #115e59;
+    border-left: 6px solid #0f766e;
+    padding-left: 15px;
+}
+
+.exp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.exp-card {
+    background: #f0fdfa;
+    padding: 25px;
+    border-radius: 18px;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.exp-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.exp-card img {
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 15px;
+}
+
+.exp-card h4 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.exp-card span {
+    font-size: 13px;
+    color: #0f766e;
+    font-weight: 600;
+}
+
+.exp-card p {
+    font-size: 14px;
+    color: #444;
+}
+
+@media (max-width: 900px) {
+    .experience {
+        margin: 80px 20px;
+        padding: 35px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h1 class="logo">ZK</h1>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="experience">
+    <div class="exp-header">
+        <h2>Experience</h2>
+        <p>Pengalaman akademik, riset, organisasi, dan praktik lapangan</p>
+    </div>
+
+    <!-- A -->
+    <div class="exp-group">
+        <h3>A. Academic & Seminar Experience</h3>
+        <div class="exp-grid">
+            <div class="exp-card">
+                <h4>International Conference Imam Bonjol Library</h4>
+                <span>International • 2025</span>
+                <p>Libraries as Gateways to SDGs.</p>
+            </div>
+            <div class="exp-card">
+                <h4>International Seminar: AI in Library</h4>
+                <span>International • 2024</span>
+                <p>Penerapan AI di perpustakaan.</p>
+            </div>
+            <div class="exp-card">
+                <h4>SEIBA International Festival</h4>
+                <span>International • 2024</span>
+                <p>Festival akademik lintas budaya.</p>
+            </div>
+            <div class="exp-card">
+                <h4>National Seminar Religious Moderation</h4>
+                <span>National • 2024</span>
+                <p>Moderasi beragama.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- B -->
+    <div class="exp-group">
+        <h3>B. Research & Publication</h3>
+        <div class="exp-grid">
+            <div class="exp-card">
+                <h4>First Author – JIPIS Journal</h4>
+                <span>DOI Indexed</span>
+                <p>Penulis pertama artikel ilmiah.</p>
+            </div>
+            <div class="exp-card">
+                <h4>Presenter – InCECINs</h4>
+                <span>International</span>
+                <p>Presenter konferensi internasional.</p>
+            </div>
+            <div class="exp-card">
+                <h4>Accepted Abstract</h4>
+                <span>International</span>
+                <p>Abstrak penelitian diterima.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- C -->
+    <div class="exp-group">
+        <h3>C. Organization & Committee</h3>
+        <div class="exp-grid">
+            <div class="exp-card">
+                <img src="key3 (1).jpeg">
+                <h4>PBAK UIN Imam Bonjol</h4>
+                <span>Committee</span>
+            </div>
+            <div class="exp-card">
+                <img src="key3 (3).jpeg">
+                <h4>UKM HIPMI PT</h4>
+                <span>Public Relation</span>
+            </div>
+            <div class="exp-card">
+                <img src="key3 (2).jpeg">
+                <h4>KKN – Sekretaris</h4>
+                <span>Community Service</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- D -->
+    <div class="exp-group">
+        <h3>D. Field Practice (PKL)</h3>
+        <div class="exp-grid">
+            <div class="exp-card">
+                <h4>PKL MAN 2 Bukittinggi</h4>
+                <span>2025</span>
+                <p>Promosi perpustakaan & INLISLite.</p>
+            </div>
+            <div class="exp-card">
+                <img src="key4.jpeg">
+                <h4>Promosi SMART Library</h4>
+            </div>
+            <div class="exp-card">
+                <img src="key5.jpeg">
+                <h4>Edukasi Siswa</h4>
+            </div>
+            <div class="exp-card">
+                <img src="key6.jpeg">
+                <h4>Input Buku INLISLite</h4>
+            </div>
+            <div class="exp-card">
+                <img src="key7.jpeg">
+                <h4>Pengolahan Koleksi</h4>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>

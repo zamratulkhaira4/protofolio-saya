@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me | Zamratul Khaira</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #0f766e, #5eead4, #ccfbf1);
+    background-size: 300% 300%;
+    animation: gradientMove 12s ease infinite;
+    color: #333;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* ANIMASI GRADIENT */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* FLOATING SHAPES */
+.bg-shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+    animation: float 10s infinite alternate;
+}
+
+.shape1 {
+    width: 300px;
+    height: 300px;
+    background: #5eead4;
+    top: 100px;
+    left: -100px;
+}
+
+.shape2 {
+    width: 250px;
+    height: 250px;
+    background: #99f6e4;
+    bottom: 100px;
+    right: -80px;
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-40px); }
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 50px;
+    background-color: rgba(15, 118, 110, 0.9);
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* ABOUT CARD */
+.about {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 45px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 24px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+    position: relative;
+    z-index: 5;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-header h2 {
+    font-size: 36px;
+    color: #0f766e;
+}
+
+.about-header p {
+    color: #555;
+}
+
+/* CONTENT */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.about-text h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+/* INFO */
+.info-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.info-item {
+    background: #f0fdfa;
+    padding: 15px 20px;
+    border-radius: 14px;
+    font-size: 14px;
+}
+
+.info-item span {
+    font-weight: 600;
+    color: #0f766e;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .info-list {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- SHAPES -->
+<div class="bg-shape shape1"></div>
+<div class="bg-shape shape2"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h1 class="logo">ZK</h1>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- ABOUT -->
+<section class="about">
+    <div class="about-header">
+        <h2>About Me</h2>
+        <p>Profil singkat dan identitas profesional</p>
+    </div>
+
+    <div class="about-content">
+        <div class="about-image">
+            <img src="key2.jpeg" alt="Zamratul Khaira">
+        </div>
+
+        <div class="about-text">
+            <h3>Zamratul Khaira</h3>
+            <p>
+                Saya merupakan lulusan baru Program Studi Ilmu Perpustakaan dan Informasi Islam
+                dari UIN Imam Bonjol Padang, dengan minat pada pengembangan literasi,
+                riset ilmiah, serta pengabdian kepada masyarakat.
+            </p>
+
+            <div class="info-list">
+                <div class="info-item"><span>Nama:</span> Zamratul Khaira</div>
+                <div class="info-item"><span>Status:</span> Fresh Graduate</div>
+                <div class="info-item"><span>Program Studi:</span> Ilmu Perpustakaan dan Informasi Islam</div>
+                <div class="info-item"><span>Kampus:</span> UIN Imam Bonjol Padang</div>
+                <div class="info-item"><span>Minat:</span> Literasi & Perpustakaan</div>
+                <div class="info-item"><span>Fokus:</span> Riset & Pengabdian</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
